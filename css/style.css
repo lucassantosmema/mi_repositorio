@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAV */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    padding: 30px 0px;
+    background-color: #181617 ;
+    width: 100%;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.logo{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: whitesmoke;
+} 
+
+header nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+header nav a:hover{
+    color: #05FCFC;
+}
+
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.mostrar-menu,
+.esconder-menu:hover{
+    color: #05FCFC;
+}
+
+#check {
+    display: none;
+}
+
+/* DESTACADOS */
+
+.recomendado{
+    display: inline;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    
+}
+
+.mejores-tragos{
+    font-family:'Hubballi', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #525555;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 3%;
+}
+
+.mejores-tragos h1{
+    margin-bottom: 20px;
+}
+
+
+.fotos-trago{
+    display: inline;
+    justify-content: space-between;
+    
+
+}
+#foto1{
+    border: solid 4px color white;
+    border-radius: 20px;
+    margin-right: 2%;
+}
+
+#foto2{
+    border: solid 4px color white;
+    border-radius: 20px;
+}
+
+#foto3{
+    border: solid 4px color white;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+
+.pie-pagina{
+    width: 100%;
+    background-color: #181617 ;
+    margin-top: auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 30px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family:'Hubballi', cursive;
+}
+.pie-pagina .grupo-1 .box P{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family:'Hubballi', cursive;
+    
+}
+.pie-pagina .grupo-1 .red-social i {
+    display: inline-block;
+    text-decoration: none;
+    color: #efefef;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social i:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.milanesas{
+    font-family:'Hubballi', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #525555;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 3%;
+}
+
+.milanesas h1{
+    margin-bottom: 20px;
+}
+
+.sandwiches{
+    font-family:'Hubballi', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #525555;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 3%;
+}
+
+.sandwiches h1{
+    margin-bottom: 20px;
+}
+
+.hamburguesas{
+    font-family:'Hubballi', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #525555;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 3%;
+}
+
+.hamburguesas h1{
+    margin-bottom: 20px;
+}
+
+.tragos{
+    font-family:'Hubballi', cursive;
+    text-align: center;
+    font-size: 20px;
+    color: #525555;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 3%;
+}
+
+.tragos h1{
+    margin-bottom: 20px;
+}
+
+.background-image{
+    background-image: url(../img/fotofondo.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+}
+
+.background-image p{
+    color: #efefef;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Hubballi', cursive;
+    font-size: 20px;
+    margin-top: 30%;
+    background-color: #7A7C7C;
+    
+    
+}
+
+.fotofondo{
+    background-image: url(../img/fondorune.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+}
+.conocenos h1{
+    text-align: center;
+    color: #525555;
+    font-family:'Hubballi', cursive;
+    font-size: 50px;
+}
+
+.conocenos p{
+    text-align: center;
+    color: #525555;
+    font-family:'Hubballi', cursive;
+    font-size: 50px;
+}
+
+.gps{
+    text-align: center;
+}
+
+.formulario{
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.formulario h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.formulario p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.formulario a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.formulario a i{
+    color: orange;
+    margin-right: 10px;
+}
+
+.formulario form .campo, textarea{
+    width: 90%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.formulario form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.formulario .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: all 300ms ease;
+}
+
+.formulario .btn-enviar:hover{
+    background: #e39403;
+}
+
+@media screen and (max-width:768px) {
+
+    .pie-pagina .grupo-1 {
+
+        width: 90vw;
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+        grid-gap: 50px;
+        
+        }
+        
+        .grupo-1 .box:nth-child(1){
+        
+        display:none
+        
+        }
+    
+     .mostrar-menu,
+     .esconder-menu{
+         display: block;
+     }
+    
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: grey;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    } 
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
